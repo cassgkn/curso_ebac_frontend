@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio EBAC - HTML JS</title>
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <h1>Exercício HTML - Manipulação do DOM</h1>
+    <h2>Formulário de Válidação de Números</h2>
+
+    <div class="container">
+        <form id="form-validacao">
+            <label for="number" >Campo A</label>
+            <input type="number" id="numero-a" placeholder="Digite um valor numérico" required>
+            <p class="error-message">Valor Inválido! O valor do Campo <b>A</b>
+                é maior que o Campo <b>B</b>
+            </p>
+            <label for="number">Campo B</label>
+            <input type="number" id="numero-b" placeholder="Digite um valor numérico" required>
+            <button type="submit" id="btn-enviar">Enviar</button>
+        </form>
+        <p class="sucess-message"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
