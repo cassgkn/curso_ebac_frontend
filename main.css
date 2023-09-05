@@ -1,0 +1,33 @@
+body {
+    margin-top: 200px;
+}
+
+.container {
+    max-width: 500px;
+    max-height: 700px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+
+form {
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.d-grid {
+    margin-bottom: 30px;
+}
+
+.form-control {
+    font-weight: 600;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container container-sm container-md container-lg">
+        <div class="row  text-primary-emphasis bg-secondary border border-primary-subtle rounded-3" >
+            <div class="col">
+                <h2>Formulário de Cadastro</h2>
+                <form>
+                    <label for="nome" class="form-label">Seu nome:</label>
+                    <input type="text" class="form-control" id="nome" />
+                    <label for="email" class="form-label">Seu email:</label>
+                    <input type="email" class="form-control" id="email" />
+                    <label for="telefone" class="form-label">Seu telefone:</label>
+                    <input type="telefone" class="form-control" id="telefone" />
+                </form>
+            </div>
+            <div class="d-grid g-3 gap-3 col-12 mx-auto">
+                <button class="btn btn-success">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
