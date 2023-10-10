@@ -1,0 +1,217 @@
+@fontePrincipal: 'Roboto', sans-serif;
+@backgroundColor: #4158D0;
+@backgroundImage: linear-gradient(43deg, #4158D0 0%, #C850C0 9%, #FFCC70 72%);
+@corDaBorda: #fff;
+@corDaSection: #a9a59d;
+@corDoBgSection: linear-gradient(243deg, #ededed 0%, #f5f9f9 100%);  
+@boxShadow: rgba(0, 0, 0, 3) 0px 5px 15px;
+@corDaFonte:#4158D0;
+@textShadow: rgba(0.5, 0.5, 0.5, .45) 0px 5px 15px;
+@corFonteResultado: #2a7007;
+@corBgBotao: #6c79db;
+@border: 1px solid #f6ce08;
+@corDoHover: #6c79db;
+@colorFonteBotao:rgb(23, 178, 213);
+@colorInfo: #efebea;
+@colorFooter: #d7cece;
+
+
+*{
+    font-family: @fontePrincipal;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 99.9vw;
+    height: 99.9vh;
+    background-color: @backgroundColor;
+    background-image: @backgroundImage;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.geral {
+    display: wrap;
+    width: 22rem;
+    height: 17rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    border: 1px solid @corDaBorda;
+    background-color: @corDaSection;
+    background-image: @corDoBgSection;  
+    border-radius: 15px;
+    box-shadow: @boxShadow;
+
+}
+
+.container  .titulo {
+    margin-top: 9rem;
+    font-size: 2rem;
+    color: @corDaFonte;
+    text-shadow: @textShadow;
+}
+.container .etanol {
+    display: flex;
+    flex-direction: column;
+    color: @corFonteResultado;
+    font-size: 1.5rem;
+    font: 900;
+    align-items: left;
+    justify-content: left;
+    margin: 1rem;
+    padding-top: 1rem;
+}
+
+.container .etanol input{
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 19rem;
+    height: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin: .1rem;
+    padding: .3rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* <-- elimina as setas de adicionamento numerico existente na lateral */
+}
+
+.container .gasolina {
+    display: flex;
+    flex-direction: column;
+    color: @corFonteResultado;
+    font-size: 1.5rem;
+    font: 900;
+    align-items: left;
+    justify-content: left;
+    margin: 1rem;
+}
+
+.container .gasolina input {
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 19rem;
+    height: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin: .1rem;
+    padding: .3rem;
+}
+
+.geral .botao {
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1.2rem;
+    width: 19.7vw;
+}
+
+.botao {
+    padding: .7rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: @corBgBotao;
+    border-radius: 1rem;
+    border: @border;
+    cursor: pointer;      
+}
+
+button:hover {
+    background-color: @corDoHover;
+    color: @colorFonteBotao;
+}
+
+.container .info {
+    margin-top: 3rem;
+    color: @colorInfo;
+}
+
+footer {
+    display: flex;
+    color: @colorFooter;
+}
+
+.container .s{
+        font-weight:bold;
+    }
+
+@media screen and (min-width: 380px) {
+    .container h1{
+        display: flex;
+        font-size: 1.2rem;
+        justify-content: center;
+        margin-left: 1.35rem;
+        padding: 0;  
+    }
+
+    .container .geral {
+        width: 21.5rem;
+    }
+
+    .geral .botao {
+        width: 18.5rem;
+    }
+
+    .container .info {
+        margin: 1.4rem;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .container .gasolina input {
+        width: 18.7rem;
+        height: 1.2rem;
+    }
+
+    .container .etanol input{
+        width: 18.7rem;
+        height: 1.2rem;
+    }
+    
+    .container .s{
+            font-weight:bold;
+            padding-left: 3px;
+        }
+    
+}
+
+
+@media screen and (min-width: 576px) {
+    .container h1{
+        font-size: 2.5rem;  
+        margin: 1rem;   
+    }
+    .container .info {
+        margin-left: 5rem;
+        margin-right: 4rem;
+        font-size: 1.3rem;
+    }
+    
+    .container .s{
+            font-weight:bold;
+            padding-left: 3px;
+        }
+}
+
+@media screen and (min-width: 992px) {
+    .container h1{
+        font-size: 2.7rem;  
+    }
+    
+    .container .s{
+            font-weight:bold;
+            padding-left: 3px;
+        }
+}
