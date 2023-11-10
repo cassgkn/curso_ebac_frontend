@@ -25,4 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 followersElement.innerText = json.follwers;
             }
         })
+        .catch(function(erro) {
+            alert("Ocorreu um erro ao encontrar o perfil do Github");
+        })
 })
