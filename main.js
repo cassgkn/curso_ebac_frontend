@@ -26,6 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         })
         .catch(function(erro) {
-            alert("Ocorreu um erro ao encontrar o perfil do Github");
+            alert("Ocorreu um erro ao encontrar o perfil do Github, tente mais tarde!");
         })
 })
